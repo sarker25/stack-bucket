@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
-//import custom component
-import BucketPage from '../pages/bucket';
-import BucketDetailPage from '../pages/bucket-detail'
+import AppRouter from './AppRouter.jsx';
+
 
 function App() {
   return (
@@ -17,9 +16,7 @@ function App() {
 			rel="stylesheet"
 		/>
       </Helmet>
-    {/* custom component */}
-     <BucketPage />
-     <BucketDetailPage />
+      <AppRouter />
      
     </div>
   );
